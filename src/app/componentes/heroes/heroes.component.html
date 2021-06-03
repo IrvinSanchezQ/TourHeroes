@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="./heroes.component.css" media="screen" />
+
+
+
+<div class="card" style="width: 18rem;" *ngFor ="let heroes of heroes">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <table class="table">
+            <thead>
+
+            </thead>
+            <tbody>
+               <tr>
+                <th style="background-color: steelblue;" scope="row">{{heroes.id}} </th>
+                <td colspan="2" class="table-active"> {{heroes.name}}</td>
+                <td>X</td>
+               </tr>
+            </tbody>
+          </table>
+      </li>
+    </ul>
+  </div>

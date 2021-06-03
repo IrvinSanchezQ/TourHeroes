@@ -1,0 +1,11 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./dashboard.component.css" media="screen" />
+
+<p class="titulo">Top Heroes</p> 
+<div class="card" style=" text-align: center;" >
+    <div class="card-body">
+        <div class="centrar">
+            <button type="button" class="btn btn-outline-dark" style="margin-left:  .75cm; text-align: center;"
+            *ngFor = "let heroes of heroes | slice: 0:4; let i  index" >{{heroes.name}}</button></div>
+    </div>
+  </div>
